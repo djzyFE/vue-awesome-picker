@@ -42,17 +42,21 @@ function getDays (y, m) {
 const yearData = range(START_YEAR, END_YEAR, false, UNIT_YEAR)
 const monthData = range(1, 12, false, UNIT_MONTH)
 
-const cascadeMonthData = monthData.map((month) => {
-  return {
-    value: month,
-    children: []
+const cascadeMonthData = function () {
+  let ret = []
+  for (let i = 0; i < monthData.length; i++) {
+    ret.push({
+      value: monthData[i],
+      children: []
+    })
   }
-})
+  return ret
+}
 
 const dateData = yearData.map((year) => {
   const item = {
     value: year,
-    children: cascadeMonthData.slice()
+    children: cascadeMonthData()
   }
   item.children.forEach((month) => {
     month.children = getDays(year.slice(0, -1), month.value.slice(0, -1))
