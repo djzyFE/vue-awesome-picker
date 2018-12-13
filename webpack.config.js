@@ -3,8 +3,8 @@ var webpack = require('webpack')
 let VueLoaderPlugin = require('vue-loader/lib/plugin')
 let UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
-  entry: './src/main.js', // dev
-  // entry: './src/lib/index.js', // npm
+  // entry: './src/main.js', // dev
+  entry: './src/lib/index.js', // npm
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: 'dist/',
