@@ -15,13 +15,13 @@
 
 ## Installation
 ``` bash
-npm install vue-awesome-picker --save
+npm install vuejs-picker --save
 ```
 
 ## Usage
 ``` javascript
 /* main.js */
-import AwesomePicker from 'vue-awesome-picker';
+import AwesomePicker from 'vuejs-picker';
 Vue.use(AwesomePicker);
 ```
 ``` javascript
