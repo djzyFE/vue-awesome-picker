@@ -331,16 +331,19 @@ export default {
 
   .fade-enter-active, .fade-leave-active {
     transition: all .3s ease;
+    -webkit-transition: all .3s ease;
   }
 
   /* slide */
   .slide-enter, .slide-leave-to {
     opacity: 0.5;
-    transform: translate3d(0, 270px, 0)
+    transform: translate3d(0, 270px, 0);
+    -webkit-transform: translate3d(0, 270px, 0)
   }
 
   .slide-enter-active, .slide-leave-active {
     transition: all .3s ease;
+    -webkit-transition: all .3s ease;
   }
 
   .mask {
@@ -375,6 +378,7 @@ export default {
       left: 0;
       right: 0;
       transform: scaleY(.5);
+      -webkit-transform: scaleY(.5);
     }
 
     span {
@@ -418,6 +422,7 @@ export default {
       height: 72px;
       background: #fff;
       transform: translateZ(0);
+      -webkit-transform: translateZ(0);
       z-index: 1;
       pointer-events: none;
     }
@@ -435,6 +440,7 @@ export default {
         bottom: 0;
         border-bottom: 1px solid #ebebeb;
         transform: scaleY(.5);
+        -webkit-transform: scaleY(.5);
       }
     }
 
@@ -451,6 +457,7 @@ export default {
         top: 0;
         border-bottom: 1px solid #ebebeb;
         transform: scaleY(.5);
+        -webkit-transform: scaleY(.5);
       }
     }
   }
