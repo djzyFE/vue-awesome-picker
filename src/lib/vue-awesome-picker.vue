@@ -464,11 +464,13 @@ export default {
 
   .picker-wheel-wrapper {
     display: flex;
+    display: -webkit-flex;
     align-items: stretch;
     height: 100%;
 
     .picker-wheel {
       flex: 1;
+      -webkit-flex: 1;
       overflow: hidden;
     }
 
